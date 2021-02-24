@@ -1,3 +1,12 @@
+import discord
+from discord.ext import commands 
+import random
+client = commands.Bot(command_prefix="$", self_bot=True)
+client.remove_command("help")
+token = "PUT TOKEN HERE"
+
+# -----------------------------------------------------
+
 SPAM_CHANNEL = ["misspoken on top", "nuked by misspoken", "lmaooo", "ran by misspoken"]
 SPAM_MESSAGE = ["@everyone RAIDED BY MISSPOKEN! https://discord.gg/E6pQteTBYp", "@everyone Misspoken owns you! https://discord.gg/E6pQteTBYp", "@everyone Ran by Misspoken https://discord.gg/E6pQteTBYp"]
 @client.command()
